@@ -1,18 +1,25 @@
 {
-    "name": "JATE",
+    "name": "jate",
     "version": "1.0.0",
     "description": "",
     "main": "server.js",
     "scripts": {
-        "server": "nodemon server.js --ignore client"
+      "start": "node server.js",
+      "server": "nodemon server.js",
+      "build": "webpack",
+      "start:dev": "concurrently \"npm run server\" \"npm run client\"",
+      "client": "cd client && npm start"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "express": "^4.17.1"
+      "express": "^4.17.1"
     },
     "devDependencies": {
-        "nodemon": "^2.0.4"
+      "nodemon": "^2.0.4",
+      "webpack": "^5.38.1",
+      "webpack-cli": "^4.7.2",
+      "concurrently": "^6.2.0"
     }
-}
+  }  
