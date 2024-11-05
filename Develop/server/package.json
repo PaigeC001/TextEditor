@@ -6,7 +6,7 @@
     "scripts": {
       "start": "node server.js",
       "server": "nodemon server.js",
-      "build": "webpack",
+      "build": "webpack --mode production",
       "start:dev": "concurrently \"npm run server\" \"npm run client\"",
       "client": "cd client && npm start"
     },
@@ -22,4 +22,5 @@
       "webpack-cli": "^4.7.2",
       "concurrently": "^6.2.0"
     }
-  }  
+  }
+  
