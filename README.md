@@ -74,4 +74,4 @@ J.A.T.E (Just Another Text Editor) is a Progressive Web Application (PWA) that a
 
 - Render Live Link:  https://texteditor-c1od.onrender.com
 
-- GitHub Repo:  
+- GitHub Repo:  https://github.com/PaigeC001/TextEditor
